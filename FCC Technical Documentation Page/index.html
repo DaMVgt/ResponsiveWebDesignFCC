@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav id="navbar">
+        <header>
+            <h2>Github Documentation</h2>
+        </header>
+        <ul>
+            <li><a href="#introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#how_to_install_github" class="nav-link">How to Install Github</a></li>
+            <li><a href="#setting_global_git_username_and_email" class="nav-link">Setting Global Git Username and Email</a></li>
+            <li><a href="#github_commands" class="nav-link">Github Commands</a></li>
+            <li><a href="#references" class="nav-link">References</a></li>
+        </ul>
+    </nav>
+    <!-- Main -->
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>
+                <h2>Introduction</h2>
+            </header>
+            <article>
+                <p>
+                    This is the introduction to the Github documentation page. People use GitHub to build some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can help you do it even better.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="how_to_install_github">
+            <header>
+                <h2>How to Install Github</h2>
+            </header>
+            <article>
+                <p>
+                    <ul>
+                        <li>Step 1: Navigate to the download page of official <a href="https://git-scm.com/downloads">git website</a> and download Git client for windows.</li>
+                        <li>Step 2: By running the installer file, the wizard will progress with the usual following step
+                            <ul class="li-2">
+                                <li>Welcome screen</li>
+                                <li>License agreement</li>
+                                <li>Installation folder</li>
+                                <li>Choose the components to be installed.</li>
+                                <li>Start menu configuration</li>
+                            </ul>
+                            along with these, wizards proceeds further with configuration specifics, which will be explained in the consequent steps.
+                        </li>
+                        <li>
+                            Step 3: Adding the PATH environment<br>
+                            <img src="https://www.educba.com/academy/wp-content/uploads/2019/02/Github.2-1024x576.jpg" alt=""><br>
+                            By default, the installer will choose ‘Use Github from Github Bash Only’.
+                        </li>
+                        <li>Step 4: Configure the terminal emulator to use with Git Bash.</li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="setting_global_git_username_and_email">
+            <header>
+                <h2>Setting Global Git Username and Email</h2>
+            </header>
+            <article>
+                <p>To set your global commit name and email address run the <b>git config</b> command with the <b>--global</b> option.</p>
+                <code>git config --global user.name "Your Name"
+                    git config --global user.email "youremail@yourdomain.com"
+                </code>
+            </article>
+        </section>
+        <section class="main-section" id="github_commands">
+            <header>
+                <h2>Github Commands</h2>
+            </header>
+            <article>
+                <p>Suppose developer needs to prepare one new repository in his local environment. For initializing the same they have to use init commands, which helps them for initializing GitHub project repository locally.</p>
+                <code>Git init</code>
+                <p>Suppose developer needs to create one specific repository of Github in their local copy from the specific remote location. Then they have to execute clone command for copying the same remote repository in the local environment in specific location.</p>
+                <code>Git clone ssh://something.com/[username]/[repository_name].git</code>
+                <p>This GitHub command is mainly used for identifying GIT created status in local repository. It provides proper information between a syncing status of local and Github repository to the end user.</p>
+                <code>Git status -s</code>
+                <p>Used for adding one specific file in staging area.</p>
+                <code>Git add [file_name.doc]</code>
+                <p>Used for adding all files</p>
+                <code>Git add .</code>
+                <p>Commit all the required changes.</p>
+                <code>Git commits –m [“message for commit”]</code>
+                <p>Helping for mapping local repository’s origin branch with remote repository through SSH.</p>
+                <code>Git remote add origin ssh://something.com/[user_name]/[repository_name].git</code>
+                <p>It does a similar task like above, pushing entire local repository branch to the remote repository, extra utility of using this command is also remembered for this specific branch for future reference.</p>
+                <code>Git push –u origin [branch_name]</code>
+                <p>Helping for pulling entire changes from the remote repository to local.</p>
+                <code>Git pull origin [branch_name]</code>
+                <p>Displaying all the log information of one specific project, which can provide every information with committed changes.</p>
+                <code>Git log</code>
+            </article>
+        </section>
+        <section class="main-section" id="references">
+            <header>
+                <h2>References</h2>
+            </header>
+            <article>
+                <ul>
+                    <li>The documentation in this page is taken from <a href="https://www.educba.com/github-commands/?source=leftnav">EDUCBA</a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
